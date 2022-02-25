@@ -40,3 +40,7 @@ main , #evaluation-form {
   display: flex;
   flex-wrap: wrap;
 }
+
+#label-content {
+  width: 100%;
+}
