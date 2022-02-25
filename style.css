@@ -36,16 +36,29 @@ main , #evaluation-form {
   margin-top: 15px;
 }
 
+#second-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .families {
   display: flex;
   flex-direction: column;
+  flex: 1 1 40%;
 }
 
 #technologies-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 60%;
 }
 
-#label-content {
+#technologies-container label {
+  width: 30%;
+}
+
+#technologies-container > #label-content {
   width: 100%;
 }
