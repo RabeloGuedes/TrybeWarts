@@ -19,6 +19,7 @@ main , #evaluation-form {
 #evaluation-form {
   flex-flow: column;
   width: 675px;
+  align-content: space-between;
 }
 
 #trybewarts-forms-logo {
@@ -38,4 +39,9 @@ main , #evaluation-form {
 .families {
   display: flex;
   flex-direction: column;
+}
+
+#technologies-container {
+  display: flex;
+  flex-wrap: wrap;
 }
