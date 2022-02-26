@@ -1,4 +1,6 @@
 const buttonLogin = document.querySelector('#enter');
+const buttonSend = document.querySelector('#submit-btn');
+const checkBoxAgreement = document.querySelector('#agreement');
 
 function checkData() {
   const email = document.querySelector('#email');
@@ -11,3 +13,13 @@ function checkData() {
 }
 
 buttonLogin.addEventListener('click', checkData);
+
+function enable() {
+  if (checkBoxAgreement.checked) {
+    buttonSend.disabled = false;
+  } else {
+    buttonSend.disabled = true;
+  }
+}
+
+checkBoxAgreement.addEventListener('click', enable);
