@@ -81,3 +81,9 @@ main , #evaluation-form {
   border-radius: 5px;
   letter-spacing: 3px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
