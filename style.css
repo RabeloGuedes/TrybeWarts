@@ -1,19 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Supermercado One, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+hr {
+  height: 2px;
+  background-color: gray;
+  border: none;
+}
+
+hr:nth-of-type( 1 ) {
+  margin-top: 20px;
+}
+
+hr:nth-of-type( 2 ) {
+  margin: 20px 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .trybewarts-header-logo {
-  width: 100px;
+  width: 80px;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
+  height: 20px;
+}
+
+#email , #password , #enter {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(126, 14, 160);
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 
 main , #evaluation-form {
   display: flex;
+  justify-content: space-evenly;
 }
 
 #evaluation-form {
@@ -22,12 +80,25 @@ main , #evaluation-form {
   align-content: space-between;
 }
 
+#evaluation-form h1 {
+  text-align: center;
+}
+
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 #full-name , #email-select-container {
   display: flex;
+}
+
+#email-select-container {
+  align-items: center;
+}
+
+#email-select-container h3 {
+  margin-top: 15px;
 }
 
 #input-name , #input-lastname , #input-email , #house {
@@ -46,12 +117,14 @@ main , #evaluation-form {
   display: flex;
   flex-direction: column;
   flex: 1 1 40%;
+  justify-content: space-between;
+  height: 100px;
 }
 
 #technologies-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   flex: 1 1 60%;
 }
 
@@ -63,12 +136,31 @@ main , #evaluation-form {
   width: 100%;
 }
 
+.rate-Trybewarts {
+  display: flex;
+  justify-content: space-between;
+}
+
 #textarea-container {
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 #textarea {
-  width: 99%;
+  resize: none;
+  flex: 1 1 1000px;
+}
+
+#counter {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.agreement-infos {
+  margin-top: 20px;
 }
 
 #submit-btn {
@@ -86,4 +178,9 @@ footer {
   display: flex;
   justify-content: center;
   align-content: flex-end;
+  background-color: rgb(58, 58, 58);
+  padding: 10px 0;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
